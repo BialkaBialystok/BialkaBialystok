@@ -155,3 +155,38 @@ footer {
     margin: 10px 0;
     color: #555;
 }
+/* Domyślne style dla komputerów */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Responsywność dla ekranów do 768px (tablet i telefon) */
+@media (max-width: 768px) {
+  .container {
+    padding: 10px;
+  }
+  h1 {
+    font-size: 24px; /* Zmniejszenie czcionki nagłówka */
+  }
+  .navbar {
+    flex-direction: column; /* Zmiana na kolumnowy układ menu */
+  }
+  .navbar a {
+    padding: 10px;
+    text-align: center;
+    font-size: 16px;
+  }
+  /* Inne style do dopasowania na małych ekranach */
+}
+
+/* Responsywność dla ekranów do 480px (główne urządzenia mobilne) */
+@media (max-width: 480px) {
+  h1 {
+    font-size: 20px; /* Jeszcze mniejsza czcionka */
+  }
+  .navbar a {
+    font-size: 14px; /* Zmniejszenie tekstu w menu */
+  }
+}
