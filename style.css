@@ -1,42 +1,157 @@
-body{
-    background-color: rgb(38, 38, 49);
+/* Podstawowe style */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #eff2f3;  /* Jasne tło */
+    margin: 0;
+    padding: 0;
+    transition: all 0.5s ease;
 }
 
+header {
+    background-color: #003366;  /* Ciemniejszy odcień niebieskiego */
+    color: white;
+    padding: 20px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
 
-#topbox{
-    background-color: rgb(0, 0, 0);
-    border-radius: 1px;
-    font-family: "Lucida Console", "Courier New", monospace;
+/* Nawigacja */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #007acc;  /* Przyjemny niebieski kolor */
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #005fa3;  /* Ciemniejszy niebieski po najechaniu */
+    transform: scale(1.1);  /* Powiększenie przy najechaniu */
+}
+
+/* Sekcja hero na stronie głównej */
+.hero {
+    background-color: #ffffff;  /* Białe tło */
+    text-align: center;
+    padding: 50px 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1.5s ease-out;
+}
+
+/* Animacja fade-in */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.hero h2 {
+    color: #003366;  /* Kolor pasujący do nagłówka */
+}
+
+.hero p {
+    font-size: 18px;
+    color: #666;
+}
+
+/* Sekcja O Klubie */
+.about {
+    padding: 50px 20px;
+    background-color: #ffffff;  /* Tło białe */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin: 20px auto;
+    width: 80%;
+    text-align: center;
+}
+
+.about h2 {
+    color: #003366;
+    margin-bottom: 20px;
+}
+
+.about p {
+    font-size: 18px;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Stopka */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #003366;
     color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
 }
-#Glowna{
-  color:white;
-  background-color: black;
-  border: 0px;
+
+/* Przekształcenie na responsywne */
+@media (max-width: 600px) {
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .hero h2 {
+        font-size: 24px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
 }
-#InfoText{
-  color:white;
-  position: fixed;
-  left: 150px;
-  font-family: Verdana;
+/* Sekcja Kontakt */
+.contact {
+    padding: 50px 20px;
+    background-color: #ffffff;  /* Tło białe */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin: 20px auto;
+    width: 80%;
+    text-align: center;  /* Wyśrodkowanie tekstu */
 }
-#WitajText{
-    color: white;
-    font-family: Verdana;
-    position: fixed;
-    left: 325px;
+
+.contact h2 {
+    color: #003366;
+    margin-bottom: 20px;
 }
-#Informacje{
-    background-color: black;
-    color: white;
-    border: 0px;
+
+.contact p {
+    font-size: 18px;
+    color: #333;
 }
-#Kontakt{
-    background-color: black;
-    color: white;
-    border: 0px;
+
+.contact ul {
+    list-style-type: none;
+    padding: 0;
 }
-#KontaktText{
-  font-family: Verdana;
-  color:white;
+
+.contact ul li {
+    font-size: 18px;
+    margin: 10px 0;
+    color: #555;
 }
