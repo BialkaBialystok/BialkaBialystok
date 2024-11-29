@@ -9,10 +9,16 @@ body{
     font-family: "Lucida Console", "Courier New", monospace;
     color: white;
 }
+#Glowna{
+  color:white;
+  background-color: black;
+  border: 0px;
+}
 #InfoText{
   color:white;
   position: fixed;
   left: 150px;
+  font-family: Verdana;
 }
 #WitajText{
     color: white;
@@ -29,4 +35,8 @@ body{
     background-color: black;
     color: white;
     border: 0px;
+}
+#KontaktText{
+  font-family: Verdana;
+  color:white;
 }
