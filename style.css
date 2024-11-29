@@ -9,6 +9,11 @@ body{
     font-family: "Lucida Console", "Courier New", monospace;
     color: white;
 }
+#InfoText{
+  color:white;
+  position: fixed;
+  left: 150px;
+}
 #WitajText{
     color: white;
     font-family: Verdana;
